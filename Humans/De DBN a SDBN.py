@@ -134,9 +134,9 @@ sheet1.write(0,1,'RNAS')
 sheet1.write(0,2,'SDBN')
 sheet1.write(0,3,'|L|')
 
-#PVD=pd.read_excel('lncRNAs_H_DBN.xls')
+PVD=pd.read_excel('lncRNAs_H_DBN.xls')
 #PVD=pd.read_excel('no-lncRANs_H_DBN.xls')
-PVD=pd.read_excel('possible-lncARNs_H_DBN.xls')
+#PVD=pd.read_excel('possible-lncARNs_H_DBN.xls')
 
 #############################################################################
 ######### In this part add the three sets A=AA0, B=BB0, C=CC0 in DBN ########
@@ -178,10 +178,11 @@ for j in PVD.index:
       sheet1.write(j+1,1,NOMLNC[j])
       sheet1.write(j+1,2,f'{B}')
       sheet1.write(j+1,3,len(B))
-      #book.save('lncRNAs_H_SDBN.xls')
+      book.save('lncRNAs_H_SDBN.xls')
       #book.save('no-lncRANs_H_SDBN.xls')
-      book.save('possible-lncARNs_H_SDBN.xls')
+      #book.save('possible-lncARNs_H_SDBN.xls')
 pass
 
 ##############                END ALGORITHM                 ##############
+
 ##########################################################################

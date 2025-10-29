@@ -28,3 +28,9 @@ l4          in line 402.
 l5          in line 403.
 
 trials     in line 249 (Number of times the algorithm will be executed, default trials=500).
+
+4. It saves the results obtained to ¨Results.xls¨.
+
+______________________________________________________________________________
+Authors: Hugo Cabrera-Ibarra, David Hernández-Granados, and Lina Riego-Ruiz.
+______________________________________________________________________________

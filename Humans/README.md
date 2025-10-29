@@ -3,7 +3,7 @@ ______________________________________________________________________________
 
 We present a graph-based algorithm to represent and  compare RNA secondary structures. Rooted tree graphs were used to compare two groups of Humans RNA sequences: lncRNAs and not lncRNAs, by searching for structural similarities between each group. When applied to a novel candidate sequence dataset, the algorithm evaluated whether characteristic structures identified in known lncRNAs recurred. If so, the sequences were classified as likely lncRNAs.
 
-# These are some basic instructions to use the algorithms necessary to obtain possible lncRNAs. It is divided into three steps:
+# These are some basic instructions to use the algorithms necessary to obtain possible lncRNAs. It is divided into four steps:
 
 1. Use a folding program, such as NupackWeb, to give the RNA raw sequences from sets A, B and C, obtain the DBN sets ^A (lncRNAS_H_DBN.xls), ^B (no-lncRNAs_H_DBN.xls) and ^C (possible-lncRNAS_H_DBN.xls).
 
@@ -24,3 +24,10 @@ l4          in line 417.
 l5          in line 418.
 
 trials     in line 250 (Number of times the algorithm will be executed, default trials=500).
+
+4. It saves the results obtained to ¨Results.xls¨.
+
+______________________________________________________________________________
+Authors: Hugo Cabrera-Ibarra, David Hernández-Granados, and Lina Riego-Ruiz.
+______________________________________________________________________________
+

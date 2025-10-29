@@ -1,11 +1,7 @@
 # A-graph-based-algorithm-for-detecting-long-non-coding-RNAs-through-RNA-secondary-structure-analysis
 ______________________________________________________________________________
 
-We present a graph-based algorithm to represent and  compare RNA secondary structures. Rooted tree graphs were used to compare two groups of Saccharomyces cerevisiae RNA sequences: lncRNAs and not lncRNAs, by searching for structural similarities between each group. When applied to a novel candidate sequence dataset, the algorithm evaluated whether characteristic structures identified in known lncRNAs recurred. If so, the sequences were classified as likely lncRNAs.
-
-This algorithm is explained in detail in the paper:
-
-Cabrera-Ibarra, H., Hernández-Granados, D., & Riego-Ruiz, L. (2025). A Graph-Based Algorithm for Detecting Long Non-Coding RNAs Through RNA Secondary Structure Analysis. Algorithms, 18 (10), 652. https://doi.org/10.3390/a18100652
+We present a graph-based algorithm to represent and  compare RNA secondary structures. Rooted tree graphs were used to compare two groups of Humans RNA sequences: lncRNAs and not lncRNAs, by searching for structural similarities between each group. When applied to a novel candidate sequence dataset, the algorithm evaluated whether characteristic structures identified in known lncRNAs recurred. If so, the sequences were classified as likely lncRNAs.
 
 # These are some basic instructions to use the algorithms necessary to obtain possible lncRNAs. It is divided into four steps:
 

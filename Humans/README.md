@@ -5,11 +5,11 @@ We present a graph-based algorithm to represent and  compare RNA secondary struc
 
 # These are some basic instructions to use the algorithms necessary to obtain possible lncRNAs. It is divided into four steps:
 
-1. Use a folding program, such as NupackWeb, to give the RNA raw sequences from sets A, B and C (Data Nupack.xls), obtain the DBN sets ^A, ^B and ^C.
+1. Use a folding program, such as NupackWeb, to give the RNA raw sequences from sets A, B and C, obtain the DBN sets ^A (lncRNAS_H_DBN.xls), ^B (no-lncRNAs_H_DBN.xls) and ^C (possible-lncRNAS_H_DBN.xls).
 
-2. Enter the sets in DBN in the file¨From_DBN_to_SDBN.py¨ (lines 127-187) to obtain the sets A, B and C in SDBN.
+2. Run the file ¨From_DBN_to_SDBN.py¨ from DBN sets to obtain the sets A, B and C in SDBN.
 
-3. Enter the sets in SDBN in the file ¨Bootstrapping Algorithm A.py¨ (lines 74-127) to obtain the vector V_R with the results.
+3. Run the file ¨Bootstrapping Algorithm A.py¨ from SDBN sets to obtain the vector V_R with the results.
 
 You can change the values of the parameters l1-l5:
 

@@ -74,16 +74,16 @@ def matrix(comstnorep,Set):
 
 PV1=pd.read_excel('lncRNAs_H_SDBN.xls')
 PV2=pd.read_excel('no-lncRANs_H_SDBN.xls')
-#PV3=pd.read_excel('possible-lncARNs_H_SDBN.xls')
+PV3=pd.read_excel('possible-lncARNs_H_SDBN.xls')
 
 AA0=[]            
 NOM1=[]
 for I in PV1.index:
-    AA0.append(PV1['NPPS'][I])
-    NOM1.append((PV1['ARNS'][I]))
+    AA0.append(PV1['SDBN'][I])
+    NOM1.append((PV1['RNAS'][I]))
     
 print('______________')
-print('Conjunto A:')
+print('Set A:')
 print('______________\n')
 #print(AA0)
 print(NOM1)
@@ -91,26 +91,26 @@ print(NOM1)
 BB0=[]            
 NOM2=[]
 for I in PV2.index:
-    BB0.append(PV2['NPPS'][I])
-    NOM2.append((PV2['ARNS'][I]))
+    BB0.append(PV2['SDBN'][I])
+    NOM2.append((PV2['RNAS'][I]))
     
 print('______________')
-print('Conjunto B:')
+print('Set B:')
 print('______________\n')
 #print(BB0)
 print(NOM2)
 
-#CC0=[]            
-#NOM3=[]
-#for I in PV3.index:
-#    CC0.append(PV3['NPPS'][I])
-#    NOM3.append((PV3['ARNS'][I]))
+CC0=[]            
+NOM3=[]
+for I in PV3.index:
+    CC0.append(PV3['SDBN'][I])
+    NOM3.append((PV3['RNAS'][I]))
     
 print('______________')
-print('Conjunto C:')
+print('Set C:')
 print('______________\n')
 #print(CC0)
-#print(NOM3)
+print(NOM3)
 
 #######      The sets A=AA0, B=BB0, C=CC0 in SDBN                  #######
 ##########################################################################
@@ -326,17 +326,17 @@ for w in range(trials):  # Vary RC=X[w] each iteration.
           RAA0.append(AA0[RA[x][j]])
           RBB0.append(BB0[RB[y][j]])
     
-        RC=RaC[3]+RbC[5]    # We fix the third set to $CA_3+CB_5$
+        #RC=RaC[3]+RbC[5]    # We fix the third set to $CA_3+CB_5$
         
-        for j in range(to_C):
-          RCC0.append(AA0[RC[j]])
-        for k in range(to_C):
-          RCC0.append(BB0[RC[2+k]])
+        #for j in range(to_C):
+         # RCC0.append(AA0[RC[j]])
+        #for k in range(to_C):
+         # RCC0.append(BB0[RC[2+k]])
        
         
         ''' HERE YOU CHOOSE WHICH CC0 IS GOING TO USE '''
-        DD0=RAA0+RBB0+RCC0 # Use this set DD0 for bootstrapping.  
-        #DD0=RAA0+RBB0+CC0   # Use this set DD0 when CC0 is the set of NOMPOSSIBLES lncRNAs.   
+        #DD0=RAA0+RBB0+RCC0 # Use this set DD0 for bootstrapping.  
+        DD0=RAA0+RBB0+CC0   # Use this set DD0 when CC0 is the set of NOMPOSSIBLES lncRNAs.   
         ''' HERE YOU CHOOSE WHICH CC0 IS GOING TO USE '''         
         
         ## Obtaining the sets $A_x,CA_x, B_y,CB_y$ and $D=A_x + B_y+,CA_x, + CB_y$ ##
@@ -524,4 +524,5 @@ libro.save('Results.xls')
 print('Vector V_R=', V_R)
 
 ##############                END ALGORITHM                 ##############
+
 ##########################################################################

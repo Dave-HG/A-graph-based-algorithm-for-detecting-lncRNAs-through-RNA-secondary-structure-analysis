@@ -5,6 +5,7 @@ We present a graph-based algorithm to represent and compare RNA secondary struct
 structural similarities between each group. The algorithm evaluated whether characteristic structures identified in known lncRNAs recurred.
 
 Case: lncRNAs from Saccharomyces cerevisiae.
+
 Case: lncRNAs from Humans.
 
 ______________________________________________________________________________
